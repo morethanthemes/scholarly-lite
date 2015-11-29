@@ -41,210 +41,208 @@ function scholarly_lite_preprocess_html(&$variables) {
 	$color_scheme = theme_get_setting('color_scheme');
 	
 	if ($color_scheme != 'default') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/style-' .$color_scheme. '.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/style-' .$color_scheme. '.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}
 
 	if (theme_get_setting('sitename_font_family')=='sff-1'  &&
 		theme_get_setting('slogan_font_family')=='slff-1' ||
 		theme_get_setting('headings_font_family')=='hff-1' ||
 		theme_get_setting('paragraph_font_family')=='pff-1') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/merriweather-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/merriweather-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}
 	
 	if (theme_get_setting('sitename_font_family')=='sff-2'  ||
 		theme_get_setting('slogan_font_family')=='slff-2' ||
 		theme_get_setting('headings_font_family')=='hff-2' ||
 		theme_get_setting('paragraph_font_family')=='pff-2') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/sourcesanspro-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/sourcesanspro-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}
 
 	if (theme_get_setting('sitename_font_family')=='sff-3'  ||
 		theme_get_setting('slogan_font_family')=='slff-3' ||
 		theme_get_setting('headings_font_family')=='hff-3' ||
 		theme_get_setting('paragraph_font_family')=='pff-3') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/ubuntu-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/ubuntu-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}
 	
 	if (theme_get_setting('sitename_font_family')=='sff-4'  ||
 		theme_get_setting('slogan_font_family')=='slff-4' ||
 		theme_get_setting('headings_font_family')=='hff-4' ||
 		theme_get_setting('paragraph_font_family')=='pff-4') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/ptsans-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/ptsans-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}
 
 	if (theme_get_setting('sitename_font_family')=='sff-5'  ||
 		theme_get_setting('slogan_font_family')=='slff-5' ||
 		theme_get_setting('headings_font_family')=='hff-5' ||
 		theme_get_setting('paragraph_font_family')=='pff-5') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/roboto-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/roboto-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}
 
 	if (theme_get_setting('sitename_font_family')=='sff-6'  ||
 		theme_get_setting('slogan_font_family')=='slff-6' ||
 		theme_get_setting('headings_font_family')=='hff-6' ||
 		theme_get_setting('paragraph_font_family')=='pff-6') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/opensans-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/opensans-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}
 	
 	if (theme_get_setting('sitename_font_family')=='sff-7'  ||
 		theme_get_setting('slogan_font_family')=='slff-7' ||
 		theme_get_setting('headings_font_family')=='hff-7' ||
 		theme_get_setting('paragraph_font_family')=='pff-7') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/lato-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/lato-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}
 	
 	if (theme_get_setting('sitename_font_family')=='sff-8'  ||
 		theme_get_setting('slogan_font_family')=='slff-8' ||
 		theme_get_setting('headings_font_family')=='hff-8' ||
 		theme_get_setting('paragraph_font_family')=='pff-8') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/roboto-condensed-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/roboto-condensed-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}
 	
 	if (theme_get_setting('sitename_font_family')=='sff-9'  ||
 		theme_get_setting('slogan_font_family')=='slff-9' ||
 		theme_get_setting('headings_font_family')=='hff-9' ||
 		theme_get_setting('paragraph_font_family')=='pff-9') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/exo-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/exo-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}
 	
 	if (theme_get_setting('sitename_font_family')=='sff-10'  ||
 		theme_get_setting('slogan_font_family')=='slff-10' ||
 		theme_get_setting('headings_font_family')=='hff-10' ||
 		theme_get_setting('paragraph_font_family')=='pff-10') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/roboto-slab-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/roboto-slab-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}
 	
 	if (theme_get_setting('sitename_font_family')=='sff-11'  ||
 		theme_get_setting('slogan_font_family')=='slff-11' ||
 		theme_get_setting('headings_font_family')=='hff-11' ||
 		theme_get_setting('paragraph_font_family')=='pff-11') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/raleway-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/raleway-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}
 	
 	if (theme_get_setting('sitename_font_family')=='sff-12'  ||
 		theme_get_setting('slogan_font_family')=='slff-12' ||
 		theme_get_setting('headings_font_family')=='hff-12' ||
 		theme_get_setting('paragraph_font_family')=='pff-12') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/josefin-sans-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/josefin-sans-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}
 
 	if (theme_get_setting('sitename_font_family')=='sff-14'  ||
 		theme_get_setting('slogan_font_family')=='slff-14' ||
 		theme_get_setting('headings_font_family')=='hff-14' ||
 		theme_get_setting('paragraph_font_family')=='pff-14') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/playfair-display-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/playfair-display-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}
 	
 	if (theme_get_setting('sitename_font_family')=='sff-15'  ||
 		theme_get_setting('slogan_font_family')=='slff-15' ||
 		theme_get_setting('headings_font_family')=='hff-15' ||
 		theme_get_setting('paragraph_font_family')=='pff-15') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/philosopher-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/philosopher-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}
 	
 	if (theme_get_setting('sitename_font_family')=='sff-16'  ||
 		theme_get_setting('slogan_font_family')=='slff-16' ||
 		theme_get_setting('headings_font_family')=='hff-16' ||
 		theme_get_setting('paragraph_font_family')=='pff-16') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/cinzel-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/cinzel-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}
 	
 	if (theme_get_setting('sitename_font_family')=='sff-17'  ||
 		theme_get_setting('slogan_font_family')=='slff-17' ||
 		theme_get_setting('headings_font_family')=='hff-17' ||
 		theme_get_setting('paragraph_font_family')=='pff-17') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/oswald-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/oswald-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}
 
 	if (theme_get_setting('sitename_font_family')=='sff-18'  ||
 		theme_get_setting('slogan_font_family')=='slff-18' ||
 		theme_get_setting('headings_font_family')=='hff-18' ||
 		theme_get_setting('paragraph_font_family')=='pff-18') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/playfairdisplaysc-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/playfairdisplaysc-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}
     
 	if (theme_get_setting('sitename_font_family')=='sff-19'  ||
 		theme_get_setting('slogan_font_family')=='slff-19' ||
 		theme_get_setting('headings_font_family')=='hff-19' ||
 		theme_get_setting('paragraph_font_family')=='pff-19') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/cabin-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/cabin-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}
 	
 	if (theme_get_setting('sitename_font_family')=='sff-20'  ||
 		theme_get_setting('slogan_font_family')=='slff-20' ||
 		theme_get_setting('headings_font_family')=='hff-20' ||
 		theme_get_setting('paragraph_font_family')=='pff-20') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/notosans-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/notosans-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}
 
 	if (theme_get_setting('sitename_font_family')=='sff-22'  ||
 		theme_get_setting('slogan_font_family')=='slff-22' ||
 		theme_get_setting('headings_font_family')=='hff-22' ||
 		theme_get_setting('paragraph_font_family')=='pff-22') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/droidserif-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/droidserif-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}
 
 	if (theme_get_setting('sitename_font_family')=='sff-23'  ||
 		theme_get_setting('slogan_font_family')=='slff-23' ||
 		theme_get_setting('headings_font_family')=='hff-23' ||
 		theme_get_setting('paragraph_font_family')=='pff-23') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/ptserif-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/ptserif-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}
 
 	if (theme_get_setting('sitename_font_family')=='sff-24'  ||
 		theme_get_setting('slogan_font_family')=='slff-24' ||
 		theme_get_setting('headings_font_family')=='hff-24' ||
 		theme_get_setting('paragraph_font_family')=='pff-24') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/vollkorn-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/vollkorn-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}
 
 	if (theme_get_setting('sitename_font_family')=='sff-25'  ||
 		theme_get_setting('slogan_font_family')=='slff-25' ||
 		theme_get_setting('headings_font_family')=='hff-25' ||
 		theme_get_setting('paragraph_font_family')=='pff-25') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/alegreya-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/alegreya-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}	
 
 	if (theme_get_setting('sitename_font_family')=='sff-26'  ||
 		theme_get_setting('slogan_font_family')=='slff-26' ||
 		theme_get_setting('headings_font_family')=='hff-26' ||
 		theme_get_setting('paragraph_font_family')=='pff-26') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/notoserif-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/notoserif-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}
 
 	if (theme_get_setting('sitename_font_family')=='sff-27'  ||
 		theme_get_setting('slogan_font_family')=='slff-27' ||
 		theme_get_setting('headings_font_family')=='hff-27' ||
 		theme_get_setting('paragraph_font_family')=='pff-27') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/crimsontext-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/crimsontext-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}
 
 	if (theme_get_setting('sitename_font_family')=='sff-28'  ||
 		theme_get_setting('slogan_font_family')=='slff-28' ||
 		theme_get_setting('headings_font_family')=='hff-28' ||
 		theme_get_setting('paragraph_font_family')=='pff-28') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/gentiumbookbasic-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/gentiumbookbasic-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}
 
 	if (theme_get_setting('sitename_font_family')=='sff-29'  ||
 		theme_get_setting('slogan_font_family')=='slff-29' ||
 		theme_get_setting('headings_font_family')=='hff-29' ||
 		theme_get_setting('paragraph_font_family')=='pff-29') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/volkhov-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/volkhov-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}
 
 	if (theme_get_setting('sitename_font_family')=='sff-31'  ||
 		theme_get_setting('slogan_font_family')=='slff-31' ||
 		theme_get_setting('headings_font_family')=='hff-31' ||
 		theme_get_setting('paragraph_font_family')=='pff-31') {
-		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/alegreyasc-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/alegreyasc-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	}
 
-	drupal_add_css(path_to_theme() . '/fonts/sourcecodepro-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+	drupal_add_css(path_to_theme() . '/fonts/sourcecodepro-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 	
-	drupal_add_css(path_to_theme() . '/fonts/ptserif-blockquote-font.css', array('group' => CSS_THEME, 'type' => 'file'));
-
-    drupal_add_css('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', array('type' => 'external'));
+	drupal_add_css(path_to_theme() . '/fonts/ptserif-blockquote-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 
 	drupal_add_css(path_to_theme() . '/ie9.css', array('group' => CSS_THEME, 'browsers' => array('IE' => '(IE 9)&(!IEMobile)', '!IE' => FALSE), 'preprocess' => FALSE));
     
@@ -265,7 +263,12 @@ function scholarly_lite_preprocess_html(&$variables) {
         $cdn = '//maxcdn.bootstrapcdn.com/bootstrap/' . theme_get_setting('bootstrap_js_cdn', 'scholarly_lite')  . '/js/bootstrap.min.js';
         drupal_add_js($cdn, array('type' => 'external'));
     }
-	
+
+    if (theme_get_setting('bootstrap_fa_cdn', 'scholarly_lite')) {
+        $cdn = '//maxcdn.bootstrapcdn.com/font-awesome/' . theme_get_setting('bootstrap_fa_cdn', 'scholarly_lite')  . '/css/font-awesome.min.css';
+        drupal_add_css($cdn, array('type' => 'external'));
+    }
+
 	/**
 	 * Add Javascript for enable/disable scrollTop action.
 	 */
@@ -496,7 +499,7 @@ function scholarly_lite_preprocess_maintenance_page(&$variables) {
 		drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/style-' .$color_scheme. '.css', array('group' => CSS_THEME, 'type' => 'file'));
 	}
 	
-	drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/lato-font.css', array('group' => CSS_THEME, 'type' => 'file'));
+	drupal_add_css(drupal_get_path('theme', 'scholarly_lite') . '/fonts/lato-font.css', array('group' => CSS_THEME, 'type' => 'file' , 'preprocess' => FALSE));
 
 }
 
